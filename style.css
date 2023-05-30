@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0px;
+}
+body{
+    /* background: beige; */
+    background-image: url('dark.jpg');
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* height: 100vh; */
+    flex-direction: column;
+    /* width:  */
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 33px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 30px 0px;
+}
+.to-do{
+    width: 450px;
+    /* height: 200px; */
+    min-height: 200px;
+    /* background-image: url('img.jpeg') ; */
+    background-color: aliceblue;
+    /* background: url('download (1).jpeg');
+    background-repeat: no-repeat; */
+    /* background-color: ; */
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.824);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.input{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+.entered-task{
+    padding: 10px;
+    border: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 16px;
+}
+.add{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(31,14,88);
+    color: white;
+    outline: none;
+    font-size: 16px;
+    opacity: .6;
+    cursor: pointer;
+    pointer-events: none;
+}
+.add.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.tasks{
+    width: 100%;
+    margin-top: 30px;
+}
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.224);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item p{
+    font-size: 16px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+.item-btn{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.item-btn i{
+    color: rgb(31, 14, 88);
+    font-size: 16px;
+    cursor: pointer;
+} 
+.item.completed p{
+    text-decoration: line-through;
+    color: #11111180;
+}
